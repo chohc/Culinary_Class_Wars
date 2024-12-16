@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>흑백요리사</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 폰트 프리탠다드 -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
+    <!-- 폰트 song myung -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&family=Song+Myung&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#nav-menu">
+    <!-- 네비게이션 -->
+    <nav class="navbar fixed-top" style="background-color: #111111">
+      <div
+        id="main"
+        class="container-fluid mx-4"
+        style="padding-bottom: 2px; border-bottom: 1px solid gray"
+      >
+        <a class="navbar-brand text-white" href="#home"
+          ><img src="images/title_logo.png" width="140" alt="로고"
+        /></a>
+        <div class="navbar-nav d-flex flex-row me-auto">
+          <a class="nav-link nav-item mx-2" href="#about-judge">Judge</a>
+          <a class="nav-link nav-item mx-2" href="#about-top8">Top8</a>
+          <a class="nav-link nav-item mx-2" href="#about-netflix">Netflix</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+          style="background-color: #111111; width: 300px; padding: 10px"
+        >
+          <div class="offcanvas-header" style="border-bottom: 1px solid gray">
+            <h5
+              class="offcanvas-title"
+              id="offcanvasDarkNavbarLabel"
+              style="color: gray"
+            >
+              Chef
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body py-4">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/권성준.html"
+                  >권성준(나폴리맛피아)</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/에드워드리.html"
+                  >에드워드리</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/윤남노.html"
+                  >윤남노(요리하는돌아이)</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/김미령.html"
+                  >김미령(이모카세1호)</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/장호준.html">장호준</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/정지선.html">정지선</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/최현석.html">최현석</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts/강승원.html"
+                  >강승원(트리플스타)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 메인 화면 -->
+    <!-- <header
+      class="vh-100 text-white d-flex flex-column justify-content-center align-items-center px-5"
+    >
+      <img src="images/circle_logo.png" class="img-fluid" />
+      <p style="text-align: center">
+        흑백요리사 TOP8 셰프들의 프로필 및 식당을 소개하는 웹사이트 입니다.<br />셰프들의
+        식당 정보부터 예약까지 간편하게 이용하세요.
+      </p>
+    </header> -->
+    <header
+      id="home"
+      class="vh-100 text-white d-flex flex-column justify-content-end align-items-center p-5"
+    >
+      <img
+        src="images/main_logo.png"
+        class="img-fluid"
+        style="opacity: 10%; padding-bottom: 2rem"
+      />
+      <div class="row container-fluid justify-content-between p-4">
+        <a class="col-1 align-self-center" href="#about-footer"
+          ><i class="bi bi-arrow-down" style="font-size: 20px"></i
+        ></a>
+        <p class="col-11 pb-4 text-end">
+          흑백요리사 TOP8 셰프들의 프로필 및 식당을 소개하는 웹사이트 입니다.<br />흑백요리사
+          심사위원과 8인의 셰프들의 프로필을 본 다음<br />식당의 위치와 가격대
+          알아보고 큐알을 통한 예약까지 간편하게 이용하세요!
+        </p>
+      </div>
+    </header>
+
+    <!-- 심사위원 소개 -->
+    <section class="container-fluid pt-3" id="about-judge">
+      <p
+        class="mt-5 text-white judge-title"
+        style="padding-left: 2rem; font-size: 30px !important"
+      >
+        Judge
+      </p>
+      <div
+        class="row d-flex align-items-center justify-content-center pb-5"
+        style="min-height: 80vh"
+      >
+        <div class="col-12 col-md-3 text-end judge-text">
+          <p class="judge-title">백종원<br />Palk Jong Won</p>
+          <p>
+            대한민국<br />1966년생<br />기업인,요리연구가,방송인<br />더본코리아
+            대표이사<br />새마을식당,홍콩반점,역전우동<br />한신포차,빽다방,연돈볼카츠
+            등<br />21개의 프랜차이즈 운영
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-center d-flex justify-content-center">
+          <img
+            src="images/심사위원.png"
+            class="img-fluid custom-img align-content-end"
+            alt="심사위원 이미지"
+          />
+        </div>
+        <div
+          class="col-12 col-md-3 text-start judge-text ps-4"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 5rem;
+          "
+        >
+          <p class="judge-title">안성재<br />Sung Anh</p>
+          <p>
+            미국<br />1982년생<br />요리연구가<br />미쉐린 3스타 모수 서울
+            오너셰프<br />현재는 휴업 상태
+          </p>
+        </div>
+      </div>
+      <div class="gradient-background"></div>
+    </section>
+
+    <!-- TOP8 소개-->
+    <section class="container-fluid pt-3" id="about-top8">
+      <p
+        class="mt-5 text-white judge-title"
+        style="padding-left: 2rem; font-size: 30px !important"
+      >
+        Top8
+      </p>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 3rem;
+        "
+      >
+        <div
+          class="d-flex align-items-center justify-content-center p-3"
+          style="
+            background-color: #111111;
+            border-radius: 12px;
+            opacity: 95%;
+            width: 90%;
+          "
+        >
+          <div
+            class="d-flex flex-column align-items-center justify-content-center p-3"
+            style="border-radius: 10px; width: 100%; border: 1px solid gray"
+          >
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-6">
+                <a href="scripts/권성준.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/나폴리맛피아.png"
+                    alt="권성준"
+                  />
+                  <p class="text-center top8-text">나폴리맛피아</p>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="scripts/에드워드리.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/에드워드리.png"
+                    alt="에드워드리"
+                  />
+                  <p class="text-center top8-text">에드워드리</p></a
+                >
+              </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-6 col-sm-4 col-md-2">
+                <a href="scripts/강승원.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/강승원.png"
+                    alt="강승원"
+                  />
+                  <p class="text-center top8-text">트리플스타</p></a
+                >
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <a href="scripts/윤남노.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/윤남노.png"
+                    alt="윤남노"
+                  />
+                  <p class="text-center top8-text">요리 돌아이</p></a
+                >
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <a href="scripts/이모카세.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/이모카세.png"
+                    alt="이모카세"
+                  />
+                  <p class="text-center top8-text">이모카세</p></a
+                >
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <a href="scripts/장호준.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/장호준.png"
+                    alt="장호준"
+                  />
+                  <p class="text-center top8-text">장호준</p></a
+                >
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <a href="scripts/정지선.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/정지선.png"
+                    alt="정지선"
+                  />
+                  <p class="text-center top8-text">정지선</p></a
+                >
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <a href="scripts/최현석.html" class="top8-link"
+                  ><img
+                    class="top8-image"
+                    src="images/TOP8_배경무/최현석.png"
+                    alt="최현석"
+                  />
+                  <p class="text-center top8-text">최현석</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 넷플릭스 -->
+    <section
+      class="container-fluid d-flex justify-content-center align-items-start pt-5"
+      id="about-netflix"
+    >
+      <div
+        class="row d-flex align-items-center justify-content-center w-100 p-5 g-0 mx-3"
+        style="border-bottom: 1px solid gray; padding-bottom: 5rem !important"
+      >
+        <div
+          class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-center px-4 mb-5"
+        >
+          <div>
+            <div class="d-flex align-items-center mb-3">
+              <img class="me-2" src="images/netflix_logo.png" width="50" />
+              <img src="images/title_logo.png" width="200" />
+            </div>
+            <p class="my-3 pe-3" style="color: rgb(210, 210, 210)">
+              맛 하나는 최고라고 평가받는 재야의 고수 ‘흑수저’ 80인이 대한민국
+              최고의 스타 셰프 ‘백수저’ 20인에게 도전장을 내민다.<br />오직
+              맛으로 승부를 걸며 치열하게 맞붙는 100인의 요리 계급 전쟁
+            </p>
+            <p class="my-3 pe-3" style="color: rgb(210, 210, 210)">
+              출연: 백종원 및 안성재 크리에이터: 윤현준, 김학민 및 김은지
+            </p>
+            <a
+              class="btn btn-danger"
+              href="https://www.netflix.com/kr/title/81728365"
+              role="button"
+              target="_blank"
+              >보러가기</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <img src="images/포스터.jpg" width="300" alt="포스터" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section
+      class="container-fluid d-flex flex-column justify-content-center align-items-end p-5"
+      id="about-footer"
+    >
+      <p class="text-end footer-text">
+        출처<br />사진 - 넷플릭스 인스타그램, 넷플릭스 유튜브<br />내용 -
+        넷플릭스, 나무위키
+      </p>
+      <p class="text-end footer-text">
+        2024 웹페이지저작기초 기말프로젝트<br />디지털미디어 2020111299 조은이
+      </p>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

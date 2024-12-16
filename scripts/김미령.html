@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>흑백요리사</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- 폰트 프리탠다드 -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
+    <!-- 폰트 song myung -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&family=Song+Myung&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#nav-menu">
+    <!-- 네비게이션 -->
+    <nav class="navbar fixed-top" style="background-color: #111111">
+      <div
+        id="main"
+        class="container-fluid mx-4"
+        style="padding-bottom: 2px; border-bottom: 1px solid gray"
+      >
+        <a class="navbar-brand text-white" href="../index.html"
+          ><img src="../images/title_logo.png" width="140" alt="로고"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+          style="background-color: #111111; width: 300px; padding: 10px"
+        >
+          <div class="offcanvas-header" style="border-bottom: 1px solid gray">
+            <h5
+              class="offcanvas-title"
+              id="offcanvasDarkNavbarLabel"
+              style="color: gray"
+            >
+              Chef
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body py-4">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="권성준.html">권성준(나폴리맛피아)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="에드워드리.html">에드워드리</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="윤남노.html"
+                  >윤남노(요리하는돌아이)</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">김미령(이모카세1호)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="장호준.html">장호준</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="정지선.html">정지선</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="최현석.html">최현석</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="강승원.html">강승원(트리플스타)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 메인 화면 -->
+    <section class="container-fluid" id="about-chef">
+      <img
+        class="food-photo"
+        src="../images/식당사진/즐거운술상.jpg"
+        alt="식당사진"
+      />
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="flex: 1"
+      >
+        <div class="col-12 col-md-5 d-flex chef-profile p-3">
+          <img
+            src="../images/TOP8_배경유/이모카세.jpg"
+            class="img-fluid chef-photo"
+            alt="셰프 사진"
+          />
+          <p class="chef-info-text pt-3" style="text-align: center">김미령</p>
+          <p class="chef-info-text" style="font-size: small">
+            1975년 4월 15일생<br />안동집 손칼국시, 즐거운 술상 오너셰프
+          </p>
+          <p class="chef-info-text" style="font-size: small">
+            대한민국의 한식 요리사, 어머니가 생계를 위해 경동시장에서 국수
+            장사를 시작하셨고 처음에는 국수가 싫었으나 나중에는 김미령이
+            20대때부터 국수집을 책임지기 시작
+          </p>
+        </div>
+        <div
+          class="col-12 col-md-7 d-flex align-items-center justify-content-start pt-5 restaurant-info"
+        >
+          <p class="restaurant-title pt-3">즐거운술상</p>
+          <p
+            class="restaurant-info-text"
+            style="width: 100%; text-align: center"
+          >
+            그날그날 신선한 재료와 제철 식재료만 사용하기 때문에 메뉴가 매일
+            바뀌며 이모카세 1인이라는 한상 차림 한식 요리 판매
+          </p>
+          <div
+            class="row d-flex align-items-center justify-content-center px-4"
+            style="width: 100%"
+          >
+            <div class="col-12 col-lg-9">
+              <p class="restaurant-info-text">
+                위치:
+                <a
+                  href="https://map.naver.com/p/entry/place/1066385752?c=15.00,0,0,0,dh&placePath=/home"
+                  target="_blank"
+                  style="color: #111111"
+                  >서울 도봉구 노해로(창동역에서 244m)</a
+                ><br />전화번호: 010-7539-2020<br />가격대: 50,000
+              </p>
+            </div>
+            <div class="col-12 col-lg-3 d-flex justify-content-end">
+              <a
+                href="https://map.naver.com/p/entry/place/1066385752?c=15.00,0,0,0,dh&placePath=/home"
+                target="_blank"
+                class="m-1"
+                ><img src="../images/free-icon-naver.png" width="40"
+              /></a>
+            </div>
+          </div>
+          <div class="card mb-3" style="width: 90%; border: none">
+            <div class="card-header" style="border: none; font-size: small">
+              전화 예약
+            </div>
+            <div
+              class="card-body d-flex align-items-center justify-content-center"
+            >
+              <p>010-7539-2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section
+      class="container-fluid d-flex flex-column justify-content-center align-items-end px-5"
+      id="about-footer"
+      style="background-color: #111111 !important"
+    >
+      <p class="text-end footer-text">
+        사진 및 내용 출처 - 넷플릭스 인스타그램, 네이버지도 즐거운술상,
+        나무위키<br />아이콘 - Freepix Generic Square
+      </p>
+      <p class="text-end footer-text">
+        2024 웹페이지저작기초 기말프로젝트<br />디지털미디어 2020111299 조은이
+      </p>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

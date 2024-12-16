@@ -1,0 +1,177 @@
+/* 바디 */
+body {
+  font-family: "Pretendard Variable";
+  background-color: #111111;
+}
+/* 네비게이션 */
+.nav-link {
+  color: rgb(210, 210, 210);
+}
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* 헤더 */
+header {
+  background-color: #111111;
+  background-image: radial-gradient(
+      circle,
+      rgba(17, 17, 17, 0.5),
+      rgba(17, 17, 17, 0.9),
+      rgba(17, 17, 17, 1)
+    ),
+    url(images/main_bg.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+.bi-arrow-down {
+  color: white;
+}
+
+/* 심사위원 소개 */
+#about-judge {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: radial-gradient(
+    circle,
+    rgb(40, 40, 40),
+    rgba(40, 40, 40, 0.2),
+    rgba(40, 40, 40, 0)
+  );
+  background-size: cover;
+  background-position: center top;
+}
+.custom-img {
+  max-height: 80vh;
+  width: auto;
+  align-self: flex-end;
+}
+.judge-text {
+  color: rgb(210, 210, 210);
+  height: 80vh;
+  align-self: flex-end;
+}
+.judge-title {
+  font-family: "Song Myung", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
+}
+.gradient-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #111111, #111111f5, transparent);
+}
+
+/* Top8 소개 */
+#about-top8 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(images/top8_bg2.png);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+.top8-link {
+  text-decoration: none;
+}
+.top8-image {
+  width: 120px;
+  height: 144px;
+  padding: 10px;
+  padding-bottom: 14px;
+}
+.top8-text {
+  color: rgb(210, 210, 210);
+}
+.top8-link:hover .top8-text {
+  color: white;
+}
+
+/* 넷플릭스 */
+#about-netflix {
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(17, 17, 17));
+  background-size: cover;
+  background-position: center top;
+}
+
+/* footer */
+#about-footer {
+  min-height: 30vh;
+  width: 100%;
+  background-color: #000;
+}
+.footer-text {
+  font-size: small;
+  color: gray;
+}
+
+/* 셰프 소개 */
+#about-chef {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.food-photo {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.chef-profile {
+  background-color: #111111;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chef-photo {
+  width: 70%;
+  max-width: 300px;
+}
+.chef-info-text {
+  color: rgb(210, 210, 210);
+  width: 70%;
+  max-width: 300px;
+}
+.restaurant-info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  background-color: white;
+  height: 100%;
+  margin-right: 12px;
+  min-height: 90vh;
+}
+.restaurant-title {
+  font-family: "Song Myung", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 26px;
+  text-align: center;
+  color: #111111;
+}
+.restaurant-info-text {
+  color: #111111;
+  font-size: small;
+}
+.card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
